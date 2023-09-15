@@ -6,8 +6,7 @@ export default function AdicionarProdutos() {
   document.title = "Inserir Produto";
 
   const navigate = useNavigate();
-
-  // Estado para armazenar os dados do novo produto
+  
   const [novoProduto, setNovoProduto] = useState({
     nome: "",
     preco: 0,

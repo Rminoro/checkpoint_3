@@ -32,8 +32,12 @@
         }
 
     }
+    
 
 }
-
+#Container{
+    text-align: center;
+    align-items: center;
+}
 
  

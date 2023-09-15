@@ -29,10 +29,11 @@ export default function Produtos() {
                     <td>{produto.nome}</td>
                     <td>{produto.preco}</td>
                     <td>
+                    <div id="Container">
                     <Link to={`/editar/produtos/${produto.id}`}> <Editar/> </Link> | 
-                    <Link to={`/excluir/produtos/${produto.id}`}> <Excluir/> </Link>
+                    <Link to={`/excluir/produtos/${produto.id}`}> <Excluir/> </Link>|
                     <Link to={`/adicionar/produto`}> <p>+</p></Link>|
-                    
+                    </div>
                     </td>
                  </tr>
             ))}
