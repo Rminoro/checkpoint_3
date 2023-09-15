@@ -13,18 +13,22 @@ import ExcluirProdutos from './routes/ExcluirProdutos.jsx';
 import AdicionarProdutos from './routes/AdicionarProdutos.jsx'
 
 //Criando o objeto de rotas
+// 
 const router = createBrowserRouter([
-  { path: '/', element: <App />,
-      errorElement: <Erro404 />, 
-      children: [
-        { path: '/', element: <Home /> },
-        { path: '/produtos', element: <Produtos /> },
-        { path: '/editar/produtos/:id', element: <EditarProdutos /> },
-        { path: '/excluir/produtos/:id', element: <ExcluirProdutos /> },
-        { path: '/excluir/produtos/:id', element: <AdicionarProdutos /> }
-      ]
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Erro404 />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/produtos', element: <Produtos /> },
+      { path: '/editar/produtos/:id', element: <EditarProdutos /> },
+      { path: '/excluir/produtos/:id', element: <ExcluirProdutos /> },
+      { path: '/adicionar/produto', element: <AdicionarProdutos /> }, // Correção aqui
+    ],
   },
 ])
+
 
 //BLOCO DE ROTAS
 
